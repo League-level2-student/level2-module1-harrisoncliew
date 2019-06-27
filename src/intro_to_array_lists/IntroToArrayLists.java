@@ -1,5 +1,5 @@
 package intro_to_array_lists;
-
+import java.util.ArrayList;
 public class IntroToArrayLists {
 	public static void main(String[] args) {
 		//1. Create an array list of Strings
