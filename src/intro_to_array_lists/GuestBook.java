@@ -30,6 +30,7 @@ public class GuestBook implements ActionListener {
 	JPanel panel = new JPanel();
 	JButton addName = new JButton();
 	JButton viewNames = new JButton();
+	String FinalMessage = "";
 
 	void setup() {
 		panel.add(addName);
@@ -53,10 +54,9 @@ public class GuestBook implements ActionListener {
 		} else if (e.getSource() == viewNames) {
 			for (int i = 0; i < names.size(); i++) {
 				String n = names.get(i);
-				i++;
-				String q = "Guest #"+i+": "+n+"\n";
-				JOptionPane.showMessageDialog(null, q);
-			}
+				FinalMessage = FinalMessage+"Guest #"+(i+1)+": "+n+"\n";
+				}
+			JOptionPane.showMessageDialog(null, FinalMessage);
 			
 		}
 	}
